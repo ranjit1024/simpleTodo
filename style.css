@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+.heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+main {
+  background-color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 241, 241, 1) 0%,
+    rgba(112, 130, 205, 1) 95%
+  );
+}
+
+.todo {
+  padding: 50px;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.todo .add-todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-todo input{
+    width: 400px;
+    margin-bottom: 10px;
+    padding:6px;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid rgb(23, 23, 57);
+        transition: all 0.4s ease-in-out;
+    }
+    
+}
+.add-todo input[type="submit"]{
+    background-color: #3956d6;
+    border: none;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+    &:hover{
+        cursor: pointer;
+        background-color: #4464f0
+    }
+}
+
+.show-task{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.show-task > p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;   
+    color: orangered;
+}
+
+.show-task button{
+    background-color: #159d20;
+    border: none;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 400px;
+    &:hover{
+        background-color: #1bb528;
+        cursor: pointer;
+    }
+}
+
+.task-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #F5FEFD;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 20px;
+}
+.task-discripition{
+  overflow: auto;
+  width: 400px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.task-content span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.task-discripition span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.hide{
+  display: none;
+}
