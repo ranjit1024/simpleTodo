@@ -1,1 +1,1 @@
-Basic Todo websited using HTML , CSS adn Javascript
+Basic Todo website using HTML , CSS and Javascript
